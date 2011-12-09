@@ -1,0 +1,12 @@
+<%= semantic_form_for @customer do |f| %>
+
+  <%= f.inputs do %>
+    <%= f.input :name %>
+    <%= f.input :name, :collection => 1..5, :as => :radio %>
+  <% end %>
+
+  <%= f.buttons do %>
+    <%= f.commit_button %>
+  <% end %>
+
+<% end %>
