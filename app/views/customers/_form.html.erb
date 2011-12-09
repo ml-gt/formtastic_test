@@ -2,7 +2,11 @@
 
   <%= f.inputs do %>
     <%= f.input :name %>
-    <%= f.input :name, :collection => 1..5, :as => :radio %>
+    <%= f.input :name, :collection => 1..2, :as => :radio %>
+    <%= f.input :name, :collection => 1..2, :as => :check_boxes %>
+    <%= f.input :name, :collection => 1..2, :as => :select %>
+    <%= f.input :name, :collection => (1..2).to_a, :as => :radio %>
+    <%= f.input :name, :collection => [1,2], :as => :radio %>
   <% end %>
 
   <%= f.buttons do %>
