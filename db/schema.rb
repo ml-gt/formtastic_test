@@ -11,12 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111209211515) do
+ActiveRecord::Schema.define(:version => 20111210135724) do
 
   create_table "customers", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "rating1"
+    t.integer  "rating2"
+    t.integer  "rating3"
+    t.integer  "rating4"
+    t.integer  "rating5"
   end
 
 end
